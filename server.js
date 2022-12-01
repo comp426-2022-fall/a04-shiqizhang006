@@ -9,7 +9,7 @@ const port = args.port || 5000
 app.use(express.urlencoded({extended: true}))
 
 app.get('/app', (req, res)=>{
-    res.status(200).send("200 OK")
+    res.send("200 OK")
 })
 
 app.post('/app/roll', (req, res)=>{
